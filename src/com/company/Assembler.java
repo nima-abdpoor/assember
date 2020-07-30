@@ -10,9 +10,10 @@ public class Assembler {
 
     String[] registers;
 
-    StringBuilder machineCode = new StringBuilder();
+    StringBuilder machineCode;
 
     public String commandVerify(String command) {
+        machineCode = new StringBuilder();
         String[] cmd;
         cmd = command.split("\\s");
         switch (cmd[0]) {
@@ -56,71 +57,71 @@ public class Assembler {
 
     private String Sub(String s) {
         machineCode = firstMode(s);
-        machineCode.append("000010");
+        machineCode.append("000100");
         return machineCode.toString();
     }
 
     private String Or(String s) {
         machineCode = firstMode(s);
-        machineCode.append("000100");
+        machineCode.append("001000");
         return machineCode.toString();
     }
 
     private String And(String s) {
         machineCode = firstMode(s);
-        machineCode.append("000110");
+        machineCode.append("001100");
         return machineCode.toString();
     }
 
     private String Slt(String s) {
         machineCode = firstMode(s);
-        machineCode.append("001000");
+        machineCode.append("010000");
         return machineCode.toString();
     }
 
     private String Addi(String s) {
         machineCode = thirdMode(s);
-        machineCode.append("001011");
+        machineCode.append("010110");
         return machineCode.toString();
     }
 
     private String Lw(String s) {
         machineCode = secondMode(s);
-        machineCode.append("001101");
+        machineCode.append("011010");
         return machineCode.toString();
 
     }
 
     private String Sw(String s) {
         machineCode = secondMode(s);
-        machineCode.append("001111");
+        machineCode.append("011110");
         return machineCode.toString();
     }
 
     private String Beq(String s) {
         machineCode = thirdMode(s);
-        machineCode.append("010010");
+        machineCode.append("100100");
         return machineCode.toString();
     }
 
     private String J(String s) {
         machineCode.append("00");
         machineCode.append(to_N_BitBinary(Integer.parseInt(s),8));
-        machineCode.append("010101");
+        machineCode.append("101010");
         return machineCode.toString();
     }
 
     private String Jr(String s) {
         machineCode.append("00000000");
         machineCode.append(registerToCode(s.replace("$","")));
-        machineCode.append("010111");
+        machineCode.append("101110");
         return machineCode.toString();
     }
 
     private String Jal(String s) {
         machineCode.append("00");
         machineCode.append(to_N_BitBinary(Integer.parseInt(s),8));
-        machineCode.append("011001");
+        machineCode.append("110010");
         return machineCode.toString();
     }
 
@@ -128,7 +129,7 @@ public class Assembler {
         machineCode.append("000000");
         machineCode.append(registerToCode(s.replace("$","")));
         machineCode.append("00");
-        machineCode.append("011110");
+        machineCode.append("111100");
         return machineCode.toString();
     }
 
@@ -195,7 +196,6 @@ public class Assembler {
         if (isNegetive){
             Mokamel2(binary);
         }
-        System.out.println(binary.toString());
         return binary.toString();
     }
 
@@ -209,13 +209,13 @@ public class Assembler {
                 chech=false;
             }
             if (i >= index) {
-                binary.replace(i, i+1 , revers(binary.charAt(i)));
+                binary.replace(i, i+1 , Not(binary.charAt(i)));
             }
         }
 
     }
 
-    private String revers(char charAt) {
+    private String Not(char charAt) {
         if (charAt == '0')
             return "1";
         else

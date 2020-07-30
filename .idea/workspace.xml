@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd9c686-2537-445f-8121-60617d7c4125" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Assembler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Assembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Assembler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,37 +70,63 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596015315856</updated>
-      <workItem from="1596015319869" duration="13165000" />
+      <workItem from="1596015319869" duration="13847000" />
+      <workItem from="1596090717019" duration="4379000" />
+      <workItem from="1596101776979" duration="2029000" />
     </task>
+    <task id="LOCAL-00001" summary="first overview">
+      <created>1596030590610</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596030590610</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first overview" />
+    <option name="LAST_COMMIT_MESSAGE" value="first overview" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="194" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1596023329797">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="499" y="194" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.30.1536.834@0.30.1536.834" timestamp="1596023329797" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1596029685253">
+    <state x="390" y="40" key="CommitChangelistDialog2" timestamp="1596117705302">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1596029685253" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1596029685252">
+    <state x="390" y="40" key="CommitChangelistDialog2/0.30.1536.834@0.30.1536.834" timestamp="1596117705302" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1596117661927">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1596029685252" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1596029685252">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1596117661927" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1596117661924">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1596029685252" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1596029685253">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1596117661924" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1596117661923">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1596029685253" />
-    <state x="573" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596030532284">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1596117661923" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1596117661926">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="573" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1536.834@0.30.1536.834" timestamp="1596030532284" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1596117661925" />
+    <state x="460" y="271" key="com.intellij.ide.util.TipDialog" timestamp="1596090729930">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="460" y="271" key="com.intellij.ide.util.TipDialog/0.30.1536.834@0.30.1536.834" timestamp="1596090729930" />
+    <state x="573" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596117646116">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="573" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1536.834@0.30.1536.834" timestamp="1596117646116" />
+    <state x="0" y="30" width="747" height="834" key="find.popup" timestamp="1596102205293">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="0" y="30" width="747" height="834" key="find.popup/0.30.1536.834@0.30.1536.834" timestamp="1596102205293" />
   </component>
 </project>
