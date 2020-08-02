@@ -51,77 +51,77 @@ public class Assembler {
 
     private String Add(String s) {
         machineCode = firstMode(s);
-        machineCode.append("000000");
+        machineCode.append("00000");
         return machineCode.toString();
     }
 
     private String Sub(String s) {
         machineCode = firstMode(s);
-        machineCode.append("000100");
+        machineCode.append("00010");
         return machineCode.toString();
     }
 
     private String Or(String s) {
         machineCode = firstMode(s);
-        machineCode.append("001000");
+        machineCode.append("00100");
         return machineCode.toString();
     }
 
     private String And(String s) {
         machineCode = firstMode(s);
-        machineCode.append("001100");
+        machineCode.append("00110");
         return machineCode.toString();
     }
 
     private String Slt(String s) {
         machineCode = firstMode(s);
-        machineCode.append("010000");
+        machineCode.append("01000");
         return machineCode.toString();
     }
 
     private String Addi(String s) {
         machineCode = thirdMode(s);
-        machineCode.append("010110");
+        machineCode.append("01011");
         return machineCode.toString();
     }
 
     private String Lw(String s) {
         machineCode = secondMode(s);
-        machineCode.append("011010");
+        machineCode.append("01101");
         return machineCode.toString();
 
     }
 
     private String Sw(String s) {
         machineCode = secondMode(s);
-        machineCode.append("011110");
+        machineCode.append("01111");
         return machineCode.toString();
     }
 
     private String Beq(String s) {
         machineCode = thirdMode(s);
-        machineCode.append("100100");
+        machineCode.append("10010");
         return machineCode.toString();
     }
 
     private String J(String s) {
         machineCode.append("00");
-        machineCode.append(to_N_BitBinary(Integer.parseInt(s),8));
-        machineCode.append("101010");
+        machineCode.append(to_N_BitBinary(Integer.parseInt(s),9));
+        machineCode.append("10101");
         return machineCode.toString();
     }
 
     private String Jr(String s) {
         machineCode.append("00000000");
         machineCode.append(registerToCode(s.replace("$","")));
-        machineCode.append("101110");
+        machineCode.append("10111");
         return machineCode.toString();
     }
 
     private String Jal(String s) {
         machineCode.append("00");
-        machineCode.append(to_N_BitBinary(Integer.parseInt(s),8));
-        machineCode.append("110010");
+        machineCode.append(to_N_BitBinary(Integer.parseInt(s),9));
+        machineCode.append("11001");
         return machineCode.toString();
     }
 
@@ -129,7 +129,7 @@ public class Assembler {
         machineCode.append("000000");
         machineCode.append(registerToCode(s.replace("$","")));
         machineCode.append("00");
-        machineCode.append("111100");
+        machineCode.append("11110");
         return machineCode.toString();
     }
 
@@ -144,7 +144,7 @@ public class Assembler {
             case "s1":
                 return s1;
             default:
-                return "Not Valid!";
+                throw new RuntimeException();
         }
     }
 
@@ -165,7 +165,7 @@ public class Assembler {
         s = s.replace("$", "");
         s = s.replace(")", "");
         registers = s.split(",");
-        machineCode.append(to_N_BitBinary(Integer.parseInt(registers[1]),6));
+        machineCode.append(to_N_BitBinary(Integer.parseInt(registers[1]),7));
         machineCode.append(registerToCode(registers[0]));
         machineCode.append(registerToCode(registers[2]));
         return machineCode;
@@ -175,7 +175,7 @@ public class Assembler {
     private StringBuilder thirdMode(String s) {
         s = s.replace("$", "");
         registers = s.split("[,]");
-        machineCode.append(to_N_BitBinary(Integer.parseInt(registers[2]),6));
+        machineCode.append(to_N_BitBinary(Integer.parseInt(registers[2]),7));
         machineCode.append(registerToCode(registers[0]));
         machineCode.append(registerToCode(registers[1]));
         return machineCode;

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd9c686-2537-445f-8121-60617d7c4125" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/BinaryToHexDecimal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Assembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Assembler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +73,8 @@
       <workItem from="1596015319869" duration="13847000" />
       <workItem from="1596090717019" duration="4379000" />
       <workItem from="1596101776979" duration="2229000" />
-      <workItem from="1596206846494" duration="945000" />
+      <workItem from="1596206846494" duration="1043000" />
+      <workItem from="1596354239415" duration="5730000" />
     </task>
     <task id="LOCAL-00001" summary="first overview">
       <created>1596030590610</created>
@@ -89,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596117709347</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding a class to convert binary to hexDecimal">
+      <created>1596207888597</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596207888597</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,41 +106,42 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first overview" />
     <MESSAGE value="adding some tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding some tests" />
+    <MESSAGE value="adding a class to convert binary to hexDecimal" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding a class to convert binary to hexDecimal" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="194" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1596023329797">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="499" y="194" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.30.1536.834@0.30.1536.834" timestamp="1596023329797" />
-    <state x="390" y="40" key="CommitChangelistDialog2" timestamp="1596117705302">
+    <state x="390" y="40" key="CommitChangelistDialog2" timestamp="1596207886216">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="390" y="40" key="CommitChangelistDialog2/0.30.1536.834@0.30.1536.834" timestamp="1596117705302" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1596207823338">
+    <state x="390" y="40" key="CommitChangelistDialog2/0.30.1536.834@0.30.1536.834" timestamp="1596207886216" />
+    <state width="1493" height="615" key="GridCell.Tab.0.bottom" timestamp="1596364228251">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1596207823338" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1596207823337">
+    <state width="1493" height="615" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1596364228251" />
+    <state width="1493" height="615" key="GridCell.Tab.0.center" timestamp="1596364228250">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1596207823337" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1596207823336">
+    <state width="1493" height="615" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1596364228250" />
+    <state width="1493" height="615" key="GridCell.Tab.0.left" timestamp="1596364228250">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1596207823336" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1596207823338">
+    <state width="1493" height="615" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1596364228250" />
+    <state width="1493" height="615" key="GridCell.Tab.0.right" timestamp="1596364228251">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1596207823338" />
+    <state width="1493" height="615" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1596364228251" />
     <state x="460" y="271" key="com.intellij.ide.util.TipDialog" timestamp="1596090729930">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="460" y="271" key="com.intellij.ide.util.TipDialog/0.30.1536.834@0.30.1536.834" timestamp="1596090729930" />
-    <state x="573" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596207844016">
+    <state x="573" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596366199034">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="573" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1536.834@0.30.1536.834" timestamp="1596207844016" />
+    <state x="573" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1536.834@0.30.1536.834" timestamp="1596366199034" />
     <state x="0" y="30" width="747" height="834" key="find.popup" timestamp="1596102205293">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
