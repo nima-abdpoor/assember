@@ -15,7 +15,6 @@ public class Main {
         System.out.println();
         print(machineCodes);
     }
-
     private static void print(String[] machineCodes) {
         for (String code : machineCodes)
             System.out.println(code);
